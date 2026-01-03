@@ -12,6 +12,13 @@ document.addEventListener("keydown", function(event) {
         started = true;
         levelup();
     }
+    
+});
+document.getElementById("start-btn").addEventListener("click", function(event) {
+    if (!started) {
+        started = true;
+        levelup();
+    }
 });
 function btnflash(btn) {
     btn.classList.add("flash");
