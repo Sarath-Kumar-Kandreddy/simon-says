@@ -8,7 +8,7 @@ body{
     border:5px solid black;
     margin:1.5rem;
 }
-.btn-container{
+.btn-contain{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,4 +30,108 @@ body{
 }
 .userflash{
     background-color: black;
+}
+.document{
+    background-color:black;
+    color: white;
+}
+.doc-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.high{
+   position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.doc-btn:hover{
+    background-color: grey;
+}
+
+@media (max-width: 768px) {
+
+  body {
+    padding-top: 90px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+
+
+  .doc-btn {
+    top: 10px;
+    right: 10px;
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+
+  .high {
+    top: 50px;
+    right: 10px;
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+
+  .btn-contain {
+    flex-direction: column;
+  }
+
+  .line-one,
+  .line-two {
+    display: flex;
+    justify-content: center;
+  }
+
+  .btn {
+    width: 130px;
+    height: 130px;
+    margin: 10px;
+    font-size: 1.3rem;
+    border-width: 4px;
+  }
+}
+
+
+@media (max-width: 480px) {
+
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  .btn {
+    width: 110px;
+    height: 110px;
+    font-size: 1.2rem;
+    margin: 8px;
+  }
+
+  .doc-btn,
+  .high {
+    font-size: 13px;
+    padding: 6px 10px;
+  }
 }

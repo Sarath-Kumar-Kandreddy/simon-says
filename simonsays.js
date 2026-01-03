@@ -1,9 +1,11 @@
 let gameseq=[];
 let userseq=[];
 let level=0;
+let highscore=0;
 let started=false;
 let btns=["yellow", "red", "purple", "green"];
 let h2 = document.querySelector("h2");
+let h1 = document.querySelector("h1");
 document.addEventListener("keydown", function(event) {
     if (!started) {
         console.log("Game started");
@@ -26,6 +28,10 @@ function userflash(btn) {
 function levelup() {
     userseq = [];
     level++;
+    if(level>highscore){
+        highscore=level;
+    }
+    h1.innerText=`Highest Score: ${highscore-1}`;
     h2.innerText=`Level ${level}`;
     let randidx = Math.floor(Math.random() * 3);
     let randcolor = btns[randidx];
